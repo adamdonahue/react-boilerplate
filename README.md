@@ -1,4 +1,4 @@
-# npd-react-boilerplate
+# react-boilerplate
 
 This repository serves as boilerplate for a React-driven
 Web application.  
