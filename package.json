@@ -1,5 +1,5 @@
 {
-  "name": "npd-react-boilerplate",
+  "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimeInc/npd-react-boilerplate.git"
+    "url": "git+https://github.com/adamdonahue/react-boilerplate.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/TimeInc/npd-react-boilerplate/issues"
+    "url": "https://github.com/adamdonahue/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/TimeInc/npd-react-boilerplate#readme",
+  "homepage": "https://github.com/adamdonahue/react-boilerplate#readme",
   "devDependencies": {
     "babel-jest": "^5.3.0",
     "babelify": "^6.3.0",
