@@ -11,11 +11,11 @@ var _ = require('lodash');
 var gutil = require('gulp-util');
 
 var paths = {
-    src: {
-           js: './src/js',
-           sass: '/src/sass'
-    },
-    build: './public'
+  src: {
+    js: './src/js',
+    sass: '/src/sass'
+  },
+  build: './public'
 };
 
 var browserifyOpts = {
@@ -32,21 +32,21 @@ b.on('log', gutil.log);
  * Convert a Browserify object into its associated bundle.js.
  */
 function bundle() {
-    return b.bundle()
-        .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-        .pipe(source('bundle.js'))
-        .pipe(buffer())
-        .pipe(uglify())
-        .pipe(gulp.dest(path.join(paths.build, 'js')));
-};
+  return b.bundle()
+    .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .pipe(source('bundle.js'))
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(gulp.dest(path.join(paths.build, 'js')));
+}
 
 gulp.task('js', bundle);
 gulp.task('css', function () {
-  gutil.log("Would generate CSS from Sass files.");
+  gutil.log('Would generate CSS from Sass files.');
 });
 
 gulp.task('clean', function () {
-    del([paths.build]);
+  del([paths.build]);
 });
 
 gulp.task('watch', ['js', 'css']);

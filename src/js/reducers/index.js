@@ -2,12 +2,12 @@ import {combineReducers} from 'redux';
 
 var initialState = {};
 
-export function noop(state=initialState, action) {
-    return state;
+export function noop(state=initialState) {
+  return state;
 }
 
 const app = combineReducers({
-    noop
+  noop
 });
 
 export default app;
