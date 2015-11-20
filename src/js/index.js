@@ -2,8 +2,6 @@
 
 // Although React is not used directly herein, ReactDOM.render
 // will raise an error if it's not imported.
-import React from 'react';
-
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {connect, Provider} from 'react-redux';
@@ -34,3 +32,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('react-app')
 );
+
+export default appComponent;
